@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import "./Dictionary.css"
 
 export default function Dictionary() {
 
@@ -15,7 +16,7 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <form onSubmit={search}>
+      <form onSubmit={search} className="searchbar">
         <input type="search" autofocus onChange={handleKeywordChangeSet}/>
       </form>
     </div>
