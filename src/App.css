@@ -3,3 +3,8 @@
   display: block;
   margin: 30px auto;
 }
+
+.App footer {
+  text-align: center;
+  padding: 15px;
+}

@@ -5,8 +5,7 @@ import Dictionary from "./Dictionary.js";
 
 function App() {
   return (
-    <div className="App">
-        <div className="container">
+    <div className="App container">
       <header className="App-header">
           <img
           src={logo}
@@ -15,7 +14,9 @@ function App() {
           />
           <Dictionary />
       </header>
-        </div>
+      <footer>
+        Coded by Anna Dowding
+      </footer>
     </div>
   );
 }
