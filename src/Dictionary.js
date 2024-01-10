@@ -39,10 +39,12 @@ if (loaded) {
     <div className="Dictionary">
       <section>
         <h1>What word do you want to look up?</h1>
-        <form onSubmit={handleSubmit} className="searchbar">
-          <input type="search" onChange={handleKeywordChangeSet} autocomplete="sunset"/>
-        </form>
-        <span>e.g. enchant, battle, delight</span>
+        <div className="search">
+          <form onSubmit={handleSubmit} className="searchbar">
+            <input type="search" onChange={handleKeywordChangeSet} autocomplete="sunset"/>
+          </form>
+          <span>e.g. enchant, battle, delight</span>
+        </div>
       </section>
       <Results results={results} />
     </div>
