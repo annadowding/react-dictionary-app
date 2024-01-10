@@ -36,10 +36,14 @@ export default function Dictionary() {
 
 if (loaded) {
   return (
-    <div className="Dictionary container">
-      <form onSubmit={handleSubmit} className="searchbar">
-        <input type="search" autofocus onChange={handleKeywordChangeSet} />
-      </form>
+    <div className="Dictionary">
+      <section>
+        <h1>What word do you want to look up?</h1>
+        <form onSubmit={handleSubmit} className="searchbar">
+          <input type="search" onChange={handleKeywordChangeSet} autocomplete="sunset"/>
+        </form>
+        <span>e.g. enchant, battle, delight</span>
+      </section>
       <Results results={results} />
     </div>
   );
