@@ -7,10 +7,10 @@ export default function Results (props) {
         return (
           <div>
             <section>
-            <h2>{props.results.word}</h2>
-            <p>
-              <Phonetics phonetics={props.results.phonetic} />
-            </p>
+              <h2>{props.results.word}</h2>
+              <p>
+                <Phonetics phonetics={props.results.phonetic} />
+              </p>
             </section>
             <p>
               {props.results.meanings.map(function (meaning, index) {

@@ -3,6 +3,8 @@ import "./Dictionary.css"
 import axios from "axios";
 import Results from "./Results.js";
 
+
+
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("sunset");
   let [results, setResults] = useState(null);
@@ -23,7 +25,8 @@ export default function Dictionary() {
     let apiKey = "c695b4fc90b605eea29b70ecbaft3f9o";
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
-  }
+  };
+  
 
   function handleKeywordChangeSet(event) {
     setKeyword(event.target.value);
@@ -41,7 +44,7 @@ if (loaded) {
         <h1>What word do you want to look up?</h1>
         <div className="search">
           <form onSubmit={handleSubmit} className="searchbar">
-            <input type="search" onChange={handleKeywordChangeSet} autocomplete="sunset"/>
+            <input type="search" onChange={handleKeywordChangeSet} placeholder="sunset"/>
           </form>
           <span>e.g. enchant, battle, delight</span>
         </div>
@@ -52,5 +55,5 @@ if (loaded) {
 } else {
     load();
 }
-  
 }
+  
