@@ -1,11 +1,12 @@
 .App {
   background-color: #F9F7FE;
-  padding: 30px;
+  padding: 100px 60px 60px 60px;
 }
 
 .App-logo {
-  max-height: 80px;
-  margin-left: 10px;
+  display: block;
+  margin: 0 auto;
+  max-height: 90px;
   padding: 10px 0;
 }
 
