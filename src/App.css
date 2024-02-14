@@ -4,9 +4,8 @@
 }
 
 .App-logo {
-  width: 200px;
-  display: block;
-  margin: 0 auto;
+  max-height: 80px;
+  margin-left: 10px;
   padding: 10px 0;
 }
 

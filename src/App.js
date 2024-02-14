@@ -1,4 +1,4 @@
-import logo from './logo.png';
+import logo from './anna-logo.png';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Dictionary from "./Dictionary.js";
